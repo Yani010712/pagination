@@ -1,0 +1,31 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+App.create(id: 1, name: 'yani')
+App.create(id: 2, name: 'raidis')
+App.create(id: 3, name: 'mia')
+App.create(id: 4, name: 'ana')
+App.create(id: 5, name: 'luis')
+App.create(id: 6, name: 'lia')
+App.create(id: 7, name: 'maria')
+App.create(id: 8, name: 'alfa')
+App.create(id: 9, name: 'beta')
+App.create(id: 10, name: 'elena')
+App.create(id: 11, name: 'juan')
+App.create(id: 12, name: 'mayra')
+App.create(id: 13, name: 'mireya')
+App.create(id: 14, name: 'hector')
+App.create(id: 15, name: 'carlos')
+App.create(id: 16, name: 'xiomara')
+App.create(id: 17, name: 'pedro')
+App.create(id: 18, name: 'juan')
+App.create(id: 19, name: 'orlando')
+App.create(id: 20, name: 'carlos')
+App.create(id: 21, name: 'helen')
+App.create(id: 22, name: 'andy')
+App.create(id: 23, name: 'rebeca')
+App.create(id: 24, name: 'frances')
