@@ -30,11 +30,7 @@ class AppsController < ApplicationController
             end
         end
         
-        max_size = 50
-        all_apps = App.all
-        # @response = [sort_by_id(all_apps, order)]
-        # @response = [all_apps.sort { |a, b| b <=> a }]
-        @response = [get_data(by, start, last, max, order)]
+        @response = get_data(by, start, last, max, order)
     end
 
     private
@@ -45,21 +41,21 @@ class AppsController < ApplicationController
         def get_data(by, start, last, max, order)
             if by.eql? 'id'
                 query = "id >= #{start.to_s}"
-                    if last.to_i > 0
-                        query = "#{query} and id <= #{last.to_s}"
-                    end
+                if last.to_i > 0
+                    query = "#{query} and id <= #{last.to_s}"
+                end
                 if order.eql? 'asc'
                     App.where(query).limit(max).sort { |a, b| a.id <=> b.id }
                 else
                     App.where(query).limit(max).sort { |a, b| b.id <=> a.id }
                 end
             elsif by.eql? 'name'
-                query = "name >= '#{start.to_s}'"
+                query = "name >= '#{start}'"
                 if not last.to_s.empty?
-                    query = "#{query} and name <= '#{last.to_s}'"
+                    query = "#{query} and name <= '#{last}'"
                 end
                 if order.eql? 'asc'
-                    App.order(:name).where(query).limit(max).sort { |a, b| a.name <=> b.name }
+                    App.order(:name).where(query).limit(max)
                 else
                     App.order(:name).where(query).limit(max).sort { |a, b| b.name <=> a.name }
                 end
