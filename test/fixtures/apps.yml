@@ -1,9 +1,221 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+app_1:
   id: 1
-  name: MyString
+  name: my-app-001
 
-two:
-  id: 1
-  name: MyString
+app_2:
+  id: 2
+  name: my-app-002
+
+app_3:
+  id: 3
+  name: my-app-003
+
+app_4:
+  id: 4
+  name: my-app-004
+
+app_5:
+  id: 5
+  name: my-app-005
+
+app_6:
+  id: 6
+  name: my-app-006
+
+app_7:
+  id: 7
+  name: my-app-007
+
+app_8:
+  id: 8
+  name: my-app-008
+
+app_9:
+  id: 9
+  name: my-app-009
+
+app_10:
+  id: 10
+  name: my-app-010
+
+app_11:
+  id: 11
+  name: my-app-011
+
+app_12:
+  id: 12
+  name: my-app-012
+
+app_13:
+  id: 13
+  name: my-app-013
+
+app_14:
+  id: 14
+  name: my-app-014
+
+app_15:
+  id: 15
+  name: my-app-015
+
+app_16:
+  id: 16
+  name: my-app-016
+
+app_17:
+  id: 17
+  name: my-app-017
+
+app_18:
+  id: 18
+  name: my-app-018
+
+app_19:
+  id: 19
+  name: my-app-019
+
+app_20:
+  id: 20
+  name: my-app-020
+
+app_21:
+  id: 21
+  name: my-app-022
+
+app_22:
+  id: 22
+  name: my-app-022
+
+app_23:
+  id: 23
+  name: my-app-023
+
+app_24:
+  id: 24
+  name: my-app-024
+
+app_25:
+  id: 25
+  name: my-app-025
+
+app_26:
+  id: 26
+  name: my-app-026
+
+app_27:
+  id: 27
+  name: my-app-027
+
+app_28:
+  id: 28
+  name: my-app-028
+
+app_29:
+  id: 29
+  name: my-app-029
+
+app_30:
+  id: 30
+  name: my-app-030
+
+app_31:
+  id: 31
+  name: my-app-031
+
+app_32:
+  id: 32
+  name: my-app-032
+
+app_33:
+  id: 33
+  name: my-app-033
+
+app_34:
+  id: 34
+  name: my-app-034
+
+app_35:
+  id: 35
+  name: my-app-035
+
+app_36:
+  id: 36
+  name: my-app-036
+
+app_37:
+  id: 37
+  name: my-app-037
+
+app_38:
+  id: 38
+  name: my-app-038
+
+app_39:
+  id: 39
+  name: my-app-039
+
+app_40:
+  id: 40
+  name: my-app-040
+
+app_41:
+  id: 41
+  name: my-app-041
+
+app_42:
+  id: 42
+  name: my-app-042
+
+app_43:
+  id: 43
+  name: my-app-043
+
+app_44:
+  id: 44
+  name: my-app-044
+
+app_45:
+  id: 45
+  name: my-app-045
+
+app_46:
+  id: 46
+  name: my-app-046
+
+app_47:
+  id: 47
+  name: my-app-047
+
+app_48:
+  id: 48
+  name: my-app-048
+
+app_49:
+  id: 49
+  name: my-app-049
+
+app_50:
+  id: 50
+  name: my-app-050
+
+app_51:
+  id: 51
+  name: my-app-051
+
+app_52:
+  id: 52
+  name: my-app-052
+
+app_53:
+  id: 53
+  name: my-app-053
+
+app_54:
+  id: 54
+  name: my-app-054
+
+app_55:
+  id: 55
+  name: my-app-055
