@@ -72,9 +72,25 @@ class AppsControllerTest < ActionDispatch::IntegrationTest
   test "with by equal id and max equal 5" do
     body = '{"params":{"range":{"by":"id", "max":5}}}'
     post apps_url, headers: @headers, params: body
-    expected = 5
+    expected = 5 
     actual = JSON.parse(@response.body).length
     assert_equal expected, actual, "Should return 5 items"
+  end
+
+  test "with by equal id and max equal 5 and order equal asc" do
+    body = '{"params":{"range":{"by":"id", "max":5, "order":"asc"}}}'
+    post apps_url, headers: @headers, params: body
+    first_expected = 1
+    first_actual = JSON.parse(@response.body).first["id"]
+    assert_equal first_expected, first_actual, "Should return 1" 
+  end
+
+  test "with by equal id and max equal 5 and order equal desc" do
+    body = '{"params":{"range":{"by":"id", "max":5, "order":"asc"}}}'
+    post apps_url, headers: @headers, params: body
+    last_expected = 5
+    last_actual = JSON.parse(@response.body).last["id"]
+    assert_equal last_expected, last_actual, "Should return 5" 
   end
   
   test "with by equal name should give a max of 50 items" do
@@ -117,8 +133,20 @@ class AppsControllerTest < ActionDispatch::IntegrationTest
     assert_equal expected, actual, "Should return a default of 5 items"
   end
 
+  test "with by equal name and max equal 5 and order equal asc" do
+    body = '{"params":{"range":{"by":"name", "max":5, "order":"asc"}}}'
+    post apps_url, headers: @headers, params: body
+    first_expected = "my-app-001"
+    first_actual = JSON.parse(@response.body).first["name"]
+    assert_equal first_expected, first_actual, "Should return my-app-001" 
+  end
 
-
-
+  test "with by equal name and max equal 5 and order equal desc" do
+    body = '{"params":{"range":{"by":"name", "max":5, "order":"desc"}}}'
+    post apps_url, headers: @headers, params: body
+    first_expected = "my-app-005"
+    first_actual = JSON.parse(@response.body).first["name"]
+    assert_equal first_expected, first_actual, "Should return my-app-005" 
+  end
 
 end
